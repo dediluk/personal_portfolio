@@ -2,7 +2,7 @@
 *.pot
 *.pyc
 __pycache__/
-/.idea/
-/venv/
+.idea/
+venv/
 local_settings.py
 /static/
