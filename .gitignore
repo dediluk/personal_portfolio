@@ -9,3 +9,4 @@ venv/
 >>>>>>> 08a6688ccfb929bfe0aa1e64aadff78cfc1150d1
 local_settings.py
 /static/
+db.sqlite3
