@@ -5,15 +5,15 @@
 
 {% block content %}
     <h1 id="blogtitle" class="font-weight-bold text-center">Блог</h1>
-    <h3 class="text-center mb-5">Написано {{ posts.count }} поста</h3>
+    <h3 class="text-center mb-5">Количество постов: {{ posts.count }}</h3>
     {% for post in posts %}
         <div class="row justify-content-center my-3">
             <div class="col-md-10">
-                <a href="{% url 'blog:detail' blog_id=post.id %}">
-                    <h2>{{ post.title }}</h2>
+                <a class="blog_links" href="{% url 'blog:detail' blog_id=post.id %}">
+                    <h2>{{ post.title|striptags }}</h2>
                 </a>
                 <h5 class="text-muted">{{ post.date }}</h5>
-                <p>{{ post.description|striptags|truncatechars:100 }}</p>
+                <p>{{ post.description|striptags|safe|truncatechars:100 }}</p>
 
             </div>
         </div>

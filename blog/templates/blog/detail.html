@@ -4,7 +4,7 @@
 {% block title %} {{ post.title }} {% endblock %}
 
 {% block content %}
-    <h1 class="text-center mt-5" id="blogdetailtitle">{{ post.title }}</h1>
+    <h1 class="text-center mt-5" id="blogdetailtitle">{{ post.title|safe }}</h1>
     <h5 class="text-center text-muted mb-5">{{ post.date }}</h5>
 
     {{ post.description|safe }}

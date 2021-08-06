@@ -3,6 +3,13 @@ body {
     font-weight: 500;
 }
 
+.portfolio-pics {
+    height: 23vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .navbar-nav .nav-link {
     color: rgba(0,0,0,1) !important;
 }
@@ -22,6 +29,10 @@ body {
     #blogdetailtitle {
         font-size: 5rem;
     }
+}
+
+.portfolio-title {
+    text-align:center;
 }
 
 
