@@ -35,6 +35,18 @@ body {
     text-align:center;
 }
 
+.portfolio_h2{
+    float: left;
+}
+
+.number_of_projects_text {
+    text-align: right;
+}
+
+/*.number_of_projects {*/
+/*    text-align: right;*/
+/*}*/
+
 
 
 
