@@ -4,49 +4,52 @@
 {% block title %} Портфолио {% endblock %}
 
 {% block content %}
-    <div class="row justify-content-center my-3">
-        <div class="col-5">
-            <img src="{% static 'portfolio/ava.jpg' %}" class="img-fluid">
-        </div>
+<div class="row justify-content-center my-3">
+    <div class="col-5">
+        <img src="{% static 'portfolio/ava.jpg' %}" class="img-fluid">
     </div>
+</div>
 
-    <div class="row justify-content-center mb-3">
-        <div class="col-9 text-center">
-            <h1 id="hometext" class="font-weight-bold">Денис Илюкович <br>Junior Python Developer</h1>
-        </div>
+<div class="row justify-content-center mb-3">
+    <div class="col-9 text-center">
+        <h1 id="hometext" class="font-weight-bold">Денис Илюкович <br>Junior Python Developer</h1>
     </div>
+</div>
 
-    <h2 class="mt5">Портфолио</h2>
-    <hr>
+<h2 class="mt5 portfolio_h2">Портфолио</h2>
+<h2 class="number_of_projects_text" data-number="{{ number_of_projects }}">
+    Количество проектов: <!--    <h2 class="number_of_projects" data-number="{{ number_of_projects }}">0</h2>-->
+</h2>
+<hr>
 
-    <div class="row">
-        {% for project in projects %}
-            {% if project.url %}
-                <div class="portfolio-preview col-lg-4 col-md-6">
+<div class="row">
+    {% for project in projects %}
+    {% if project.url %}
+    <div class="portfolio-preview col-lg-4 col-md-6">
 
-                        <a href="{{ project.url }}" target='_blank'>
-                            <image src="{{ project.image.url }}" class="img-fluid mb-2 portfolio-pics"></image>
-                            <h3 class="portfolio-links portfolio-title">{{ project.title }}</h3>
-                        </a>
-
-
-                    <p class="portfolio-text">{{ project.description }}</p>
-
-
-                </div>
-            {% else %}
-                <div class="portfolio-preview col-lg-4 col-md-6">
-                        <a href="{{ project.url }}" target='_blank'>
-                            <image src="{{ project.image.url }}" class="img-fluid mb-2 portfolio-pics"></image>
-                        </a>
-                    <h3 class="portfolio-title">{{ project.title }}</h3>
-                    <p class="portfolio-text">{{ project.description }}</p>
+        <a href="{{ project.url }}" target='_blank'>
+            <image src="{{ project.image.url }}" class="img-fluid mb-2 portfolio-pics"></image>
+            <h3 class="portfolio-links portfolio-title">{{ project.title }}</h3>
+        </a>
 
 
-                </div>
-            {% endif %}
-        {% endfor %}
+        <p class="portfolio-text">{{ project.description }}</p>
+
+
     </div>
+    {% else %}
+    <div class="portfolio-preview col-lg-4 col-md-6">
+        <a href="{{ project.url }}" target='_blank'>
+            <image src="{{ project.image.url }}" class="img-fluid mb-2 portfolio-pics"></image>
+        </a>
+        <h3 class="portfolio-title">{{ project.title }}</h3>
+        <p class="portfolio-text">{{ project.description }}</p>
+
+
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
 
 
 {% endblock %}
