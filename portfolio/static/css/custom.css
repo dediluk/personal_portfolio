@@ -96,6 +96,11 @@ a:hover {
     text-align: right;
 }
 
+.just_p {
+    display: inline-block;
+    width: 40px;
+}
+
 
 .just_p {
     display: inline-block;
