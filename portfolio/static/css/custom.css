@@ -1,6 +1,84 @@
+/*body {*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*    font-weight: 500;*/
+/*}*/
+
+/*a {*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*.container {*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*.portfolio-pics {*/
+/*    height: 23vh;*/
+/*    display: block;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*}*/
+
+/*.navbar-nav, .nav-link {*/
+/*    color: rgba(0,0,0,1) !important;*/
+/*}*/
+
+/*.navbar-nav, .nav-link, .portfolio-links:hover {*/
+/*    color: rgba(0,0,0,.5) !important;*/
+/*}*/
+
+/*#blogtitle {*/
+/*    font-size: 6rem;*/
+/*}*/
+
+/*@media (min-width: 992px) {*/
+/*    #hometext {*/
+/*        font-size: 4rem;*/
+/*    }*/
+/*    #blogdetailtitle {*/
+/*        font-size: 5rem;*/
+/*    }*/
+/*}*/
+
+/*.portfolio-title, .portfolio-text {*/
+/*    text-align:center;*/
+/*}*/
+
+/*.portfolio_h2{*/
+/*    float: left;*/
+/*}*/
+
+/*.portfolio-preview:hover {*/
+/*    -webkit-transform: scale(1.05);*/
+/*    -ms-transform: scale(1.05);*/
+/*    transform: scale(1.05);*/
+/*}*/
+
+/*.number_of_projects_text {*/
+/*    text-align: right;*/
+/*}*/
+
+
+
+/*.number_of_projects {*/
+/*    text-align: right;*/
+/*}*/
+
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.container {
+    margin-bottom: 10px;
 }
 
 .portfolio-pics {
@@ -10,11 +88,11 @@ body {
     margin-right: auto;
 }
 
-.navbar-nav .nav-link {
+.navbar-nav, .nav-link, .portfolio-links, .blog_links {
     color: rgba(0,0,0,1) !important;
 }
 
-.navbar-nav .nav-link:hover {
+.navbar-nav:hover, .nav-link:hover, .portfolio-links:hover, .blog_links:hover {
     color: rgba(0,0,0,.5) !important;
 }
 
@@ -31,24 +109,23 @@ body {
     }
 }
 
-.portfolio-title {
+.portfolio_h2{
+    float: left;
+}
+
+.portfolio-title, .portfolio-text {
     text-align:center;
 }
 
-.portfolio_h2{
-    float: left;
+.portfolio-preview:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .number_of_projects_text {
     text-align: right;
 }
-
-/*.number_of_projects {*/
-/*    text-align: right;*/
-/*}*/
-
-
-
 
 
 

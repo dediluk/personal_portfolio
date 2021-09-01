@@ -24,30 +24,19 @@
 
 <div class="row">
     {% for project in projects %}
-    {% if project.url %}
-    <div class="portfolio-preview col-lg-4 col-md-6">
-
-        <a href="{{ project.url }}" target='_blank'>
-            <image src="{{ project.image.url }}" class="img-fluid mb-2 portfolio-pics"></image>
-            <h3 class="portfolio-links portfolio-title">{{ project.title }}</h3>
-        </a>
-
-
-        <p class="portfolio-text">{{ project.description }}</p>
-
-
-    </div>
-    {% else %}
-    <div class="portfolio-preview col-lg-4 col-md-6">
-        <a href="{{ project.url }}" target='_blank'>
-            <image src="{{ project.image.url }}" class="img-fluid mb-2 portfolio-pics"></image>
-        </a>
-        <h3 class="portfolio-title">{{ project.title }}</h3>
-        <p class="portfolio-text">{{ project.description }}</p>
-
-
-    </div>
-    {% endif %}
+        <div class="portfolio-preview col-lg-4 col-md-6">
+            {% if project.url %}
+                <a href="{{ project.url }}" target='_blank'>
+                    <image src="{{ project.image.url }}" class="img-fluid mb-2 portfolio-pics"></image>
+                    <h3 class="portfolio-links portfolio-title">{{ project.title }}</h3>
+                </a>
+                <p class="portfolio-text portfolio-text-link">{{ project.description }}</p>
+            {% else %}
+                <image src="{{ project.image.url }}" class="img-fluid mb-2 portfolio-pics"></image>
+                <h3 class="portfolio-title">{{ project.title }}</h3>
+                <p class="portfolio-text">{{ project.description }}</p>
+            {% endif %}
+        </div>
     {% endfor %}
 </div>
 
