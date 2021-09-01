@@ -15,28 +15,31 @@
         <h1 id="hometext" class="font-weight-bold">Денис Илюкович <br>Junior Python Developer</h1>
     </div>
 </div>
-
+<!--number_of_projects_text-->
 <h2 class="mt5 portfolio_h2">Портфолио</h2>
+
 <h2 class="number_of_projects_text">
     Количество проектов: <p class="just_p" data-number="{{ number_of_projects }}"></p>
 </h2>
+
+
 <hr>
 
 <div class="row">
     {% for project in projects %}
-        <div class="portfolio-preview col-lg-4 col-md-6">
-            {% if project.url %}
-                <a href="{{ project.url }}" target='_blank'>
-                    <image src="{{ project.image.url }}" class="img-fluid mb-2 portfolio-pics"></image>
-                    <h3 class="portfolio-links portfolio-title">{{ project.title }}</h3>
-                </a>
-                <p class="portfolio-text portfolio-text-link">{{ project.description }}</p>
-            {% else %}
-                <image src="{{ project.image.url }}" class="img-fluid mb-2 portfolio-pics"></image>
-                <h3 class="portfolio-title">{{ project.title }}</h3>
-                <p class="portfolio-text">{{ project.description }}</p>
-            {% endif %}
-        </div>
+    <div class="portfolio-preview col-lg-4 col-md-6">
+        {% if project.url %}
+        <a href="{{ project.url }}" target='_blank'>
+            <image src="{{ project.image.url }}" class="img-fluid mb-2 portfolio-pics"></image>
+            <h3 class="portfolio-links portfolio-title">{{ project.title }}</h3>
+        </a>
+        <p class="portfolio-text portfolio-text-link">{{ project.description }}</p>
+        {% else %}
+        <image src="{{ project.image.url }}" class="img-fluid mb-2 portfolio-pics"></image>
+        <h3 class="portfolio-title">{{ project.title }}</h3>
+        <p class="portfolio-text">{{ project.description }}</p>
+        {% endif %}
+    </div>
     {% endfor %}
 </div>
 
