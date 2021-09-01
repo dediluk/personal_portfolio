@@ -6,12 +6,14 @@
     --var-header-bg: #eee;
 }
 
-[dark] {
-    --var-body-bg: #333;
-    --var-body-fc: #fff;
-    --var-navbar-lnk: #fff;
-    --var-navbar-lnk-hvr: #d7d7d7;
-    --var-header-bg: #666;
+@media(prefers-color-scheme: dark){
+    :root {
+        --var-body-bg: #333;
+        --var-body-fc: #fff;
+        --var-navbar-lnk: #fff;
+        --var-navbar-lnk-hvr: #d7d7d7;
+        --var-header-bg: #666;
+    }
 }
 
 body {
