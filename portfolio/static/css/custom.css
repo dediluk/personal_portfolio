@@ -3,11 +3,30 @@ body {
     font-weight: 500;
 }
 
-.navbar-nav .nav-link {
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.container {
+    margin-bottom: 10px;
+}
+
+.portfolio-pics {
+    height: 23vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-nav, .nav-link, .portfolio-links, .blog_links {
     color: rgba(0,0,0,1) !important;
 }
 
-.navbar-nav .nav-link:hover {
+.navbar-nav:hover, .nav-link:hover, .portfolio-links:hover, .blog_links:hover {
     color: rgba(0,0,0,.5) !important;
 }
 
@@ -24,7 +43,29 @@ body {
     }
 }
 
+.portfolio_h2{
+    float: left;
+}
 
+.portfolio-title, .portfolio-text {
+    text-align:center;
+}
+
+.portfolio-preview:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.number_of_projects_text{
+    text-align: right;
+}
+
+
+.just_p {
+    display: inline-block;
+    width: 40px;
+}
 
 
 

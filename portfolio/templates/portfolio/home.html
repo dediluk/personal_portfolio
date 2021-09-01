@@ -4,40 +4,49 @@
 {% block title %} Портфолио {% endblock %}
 
 {% block content %}
-    <div class="row justify-content-center my-3">
-        <div class="col-5">
-            <img src="{% static 'portfolio/ava.jpg' %}" class="img-fluid">
-        </div>
+<div class="row justify-content-center my-3">
+    <div class="col-5">
+        <img src="{% static 'portfolio/ava.jpg' %}" class="img-fluid">
     </div>
+</div>
 
-    <div class="row justify-content-center mb-3">
-        <div class="col-9 text-center">
-            <h1 id="hometext" class="font-weight-bold">Денис Илюкович <br>Junior Python Developer</h1>
-        </div>
+<div class="row justify-content-center mb-3">
+    <div class="col-9 text-center">
+        <h1 id="hometext" class="font-weight-bold">Денис Илюкович <br>Junior Python Developer</h1>
     </div>
+</div>
+<!--number_of_projects_text-->
+<h2 class="mt5 portfolio_h2">Портфолио</h2>
 
-    <h2 class="mt5">Портфолио</h2>
-    <hr>
-
-    <div class="row">
-        {% for project in projects %}
-            <div class="col-lg-4 col-md-6">
-                {% if project.url %}
-                    <a href="{{ project.url }}">
-                        <image src="{{ project.image.url }}" class="img-fluid mb-2"></image>
-                    </a>
-                {% else %}
-                    <image src="{{ project.image.url }}" class="img-fluid mb-2"></image>
-                {% endif %}
-                <h3>{{ project.title }}</h3>
-                <p>{{ project.description }}</p>
+<h2 class="number_of_projects_text">
+    Количество проектов: <p class="just_p" data-number="{{ number_of_projects }}"></p>
+</h2>
 
 
-            </div>
-        {% endfor %}
+<hr>
+
+<div class="row">
+    {% for project in projects %}
+    <div class="portfolio-preview col-lg-4 col-md-6">
+        {% if project.url %}
+        <a href="{{ project.url }}" target='_blank'>
+            <image src="{{ project.image.url }}" class="img-fluid mb-2 portfolio-pics"></image>
+            <h3 class="portfolio-links portfolio-title">{{ project.title }}</h3>
+        </a>
+        <p class="portfolio-text portfolio-text-link">{{ project.description }}</p>
+        {% else %}
+        <image src="{{ project.image.url }}" class="img-fluid mb-2 portfolio-pics"></image>
+        <h3 class="portfolio-title">{{ project.title }}</h3>
+        <p class="portfolio-text">{{ project.description }}</p>
+        {% endif %}
     </div>
+    {% endfor %}
+</div>
 
 
 {% endblock %}
+
+
+
 
 
