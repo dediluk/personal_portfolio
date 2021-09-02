@@ -41,10 +41,12 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--var-navbar-lnk);
 }
 
 a:hover {
     text-decoration: none;
+    color: var(--var-navbar-lnk-hvr);
 }
 
 .container {

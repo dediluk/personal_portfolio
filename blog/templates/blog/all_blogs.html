@@ -5,7 +5,10 @@
 
 {% block content %}
     <h1 id="blogtitle" class="font-weight-bold text-center">Блог</h1>
-    <h3 class="text-center mb-5">Количество постов: {{ posts.count }}</h3>
+<h3 class="number_of_projects_text text-center mb-5">
+    Количество проектов: <p class="just_p" data-number="{{ number_of_posts }}"></p>
+</h3>
+<!--    <h3 class="text-center mb-5">Количество постов: {{ posts.count }}</h3>-->
     {% for post in posts %}
         <div class="row justify-content-center my-3">
             <div class="col-md-10">
