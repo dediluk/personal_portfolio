@@ -7,5 +7,5 @@ function increasing() {
     number_of_projects_h2.textContent = start++;
 }
 
-let interval = setInterval(increasing, 290);
+let interval = setInterval(increasing, 220);
 

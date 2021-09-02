@@ -3,28 +3,32 @@
     --var-body-fc: #333;
     --var-navbar-lnk: #7f7f7f;
     --var-navbar-lnk-hvr: #333;
+    --var-portfolio-lnk:#212529;
+    --var-portfolio-lnk-hvr:#7f7f7f;
     --var-header-bg: #eee;
-    --var-button-clr:#fff;
-    --var-button-bc:#0d6efd;
-    --var-button-brc:#0d6efd;
-    --var-button-clr-hvr:#fff;
-    --var-button-bc-hvr:#0b5ed7;
-    --var-button-brc-hvr:#0a58ca;
+    --var-button-clr: #fff;
+    --var-button-bc: #0d6efd;
+    --var-button-brc: #0d6efd;
+    --var-button-clr-hvr: #fff;
+    --var-button-bc-hvr: #0b5ed7;
+    --var-button-brc-hvr: #0a58ca;
 }
 
-@media(prefers-color-scheme: dark){
+@media (prefers-color-scheme: dark) {
     :root {
         --var-body-bg: #333;
         --var-body-fc: #fff;
-        --var-navbar-lnk:
+        --var-navbar-lnk: #fff;
         --var-navbar-lnk-hvr: #d7d7d7;
+        --var-portfolio-lnk:#fff;
+        --var-portfolio-lnk-hvr:#d7d7d7;
         --var-header-bg: #666;
-        --var-button-clr:#000;
-        --var-button-bc:#ffc107;
-        --var-button-brc:#ffc107;
-        --var-button-clr-hvr:#000;
-        --var-button-bc-hvr:#ffca2c;
-        --var-button-brc-hvr:#ffc720;
+        --var-button-clr: #000;
+        --var-button-bc: #ffc107;
+        --var-button-brc: #ffc107;
+        --var-button-clr-hvr: #000;
+        --var-button-bc-hvr: #ffca2c;
+        --var-button-brc-hvr: #ffc720;
     }
 }
 
@@ -59,22 +63,23 @@ a:hover {
 }
 
 .my-nav-link {
-  display: block;
-  padding: 0.5rem 1rem;
-  color: var(--var-navbar-lnk);
-  text-decoration: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--var-navbar-lnk);
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
-.my-btn-primary {
-  color: var(--var-button-clr);
-  background-color: var(--var-button-bc);
-  border-color: var(--var-button-brc);
+.my-btn {
+    color: var(--var-button-clr);
+    background-color: var(--var-button-bc);
+    border-color: var(--var-button-brc);
 }
-.my-btn-primary:hover {
-  color: var(--var-button-clr-hvr);
-  background-color:var(--var-button-bc-hvr);
-  border-color:var(--var-button-brc-hvr);
+
+.my-btn:hover {
+    color: var(--var-button-clr-hvr);
+    background-color: var(--var-button-bc-hvr);
+    border-color: var(--var-button-brc-hvr);
 }
 
 .my-nav-link:hover {
@@ -82,11 +87,11 @@ a:hover {
 }
 
 .portfolio-links, .blog_links, .site-logo-title {
-    color: var(--var-navbar-lnk);
+    color: var(--var-portfolio-lnk);
 }
 
 .portfolio-links:hover, .blog_links:hover {
-    color: var(--var-navbar-lnk-hvr);
+    color: var(--var-portfolio-lnk-hvr);
 }
 
 #blogtitle {
