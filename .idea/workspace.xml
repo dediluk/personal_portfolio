@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="689b2fb7-af09-4fb1-bdf1-65620e935d3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/portfolio/static/css/bootstrap.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio/static/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/static/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/static/js/number_of_projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/static/js/number_of_projects.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/portfolio/templates/portfolio/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/templates/portfolio/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +46,8 @@
       <option name="presentableId" value="Default" />
       <updated>1628236951971</updated>
       <workItem from="1628236965000" duration="748000" />
-      <workItem from="1630505843332" duration="690000" />
+      <workItem from="1630505843332" duration="1903000" />
+      <workItem from="1630577983822" duration="1930000" />
     </task>
     <servers />
   </component>

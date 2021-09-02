@@ -41,7 +41,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto ">
                 <li class="nav-item ">
-                    <a class="my-nav-link" aria-current="page" href="#">Резюме</a>
+                    <a class="my-nav-link" aria-current="page" href="{% static 'files/resume.pdf' %}" target="_blank">Резюме</a>
                 </li>
                 <li class="nav-item">
                     <a class="my-nav-link" href="https://by.linkedin.com/in/denis-ilyukovich-a02528182"
@@ -56,7 +56,7 @@
                        target="_blank">Telegram</a>
                 </li>
                 <li class="nav-item">
-                    <a role='button' class="btn btn-primary" href="{% url 'blog:all_blogs' %}">Блог</a>
+                    <a role='button' class="btn my-btn-primary" href="{% url 'blog:all_blogs' %}">Блог</a>
                 </li>
 
 
