@@ -1,8 +1,8 @@
 :root {
     --var-body-bg: #fff;
     --var-body-fc: #333;
-    --var-navbar-lnk: #7f7f7f;
-    --var-navbar-lnk-hvr: #333;
+    --var-navbar-lnk: #333;
+    --var-navbar-lnk-hvr: #7f7f7f;
     --var-header-bg: #eee;
     --var-button-clr:#fff;
     --var-button-bc:#0d6efd;
@@ -16,7 +16,7 @@
     :root {
         --var-body-bg: #333;
         --var-body-fc: #fff;
-        --var-navbar-lnk:
+        --var-navbar-lnk:#fff;
         --var-navbar-lnk-hvr: #d7d7d7;
         --var-header-bg: #666;
         --var-button-clr:#000;
@@ -41,12 +41,12 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--var-navbar-lnk);
+    /*color: var(--var-navbar-lnk);*/
 }
 
 a:hover {
     text-decoration: none;
-    color: var(--var-navbar-lnk-hvr);
+    /*color: var(--var-navbar-lnk-hvr);*/
 }
 
 .container {
@@ -68,12 +68,12 @@ a:hover {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
-.my-btn-primary {
+.my-btn {
   color: var(--var-button-clr);
   background-color: var(--var-button-bc);
   border-color: var(--var-button-brc);
 }
-.my-btn-primary:hover {
+.my-btn:hover {
   color: var(--var-button-clr-hvr);
   background-color:var(--var-button-bc-hvr);
   border-color:var(--var-button-brc-hvr);
